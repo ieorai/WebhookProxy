@@ -6,12 +6,12 @@
     "env": {
       "Website_Api": {
         "description": "A way to protect your website with a simple key",
-        "generator": "secret"
+        "generator": "value"
     },
     "env": {
       "Discord_Webhook": {
         "description": "A way to message discord with your webhook",
-        "generator": "secret"
+        "generator": "value"
     }
     }
 }}
