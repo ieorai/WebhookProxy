@@ -6,3 +6,7 @@ An api that can be called in roblox and contacts the discord api to send message
 ## Running on Heroku
 
 Press this button to get this running:
+
+<a href="https://heroku.com/deploy?template=https://github.com/CookieHax/RobloxToDiscord">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
