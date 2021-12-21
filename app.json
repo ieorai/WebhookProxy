@@ -2,13 +2,17 @@
     "name": "Roblox to discord",
     "description": "A way to allow roblox to communicate with Discord via webserver.",
     "repository": "https://github.com/CookieHax/RobloxToDiscord",
-    "keywords": ["Python", "Fastapi", "Webserver"],
-    "Website_Api": {
-        "description": "A way to protect your website with a simple key",
-        "generator": "secret"
-    },
-    "Discord_Webhook": {
-        "description": "A way to message discord with your webhook",
-        "generator": "secret"
+    "keywords": [
+        "Python",
+        "Fastapi",
+        "Webserver"
+    ],
+    "env": {
+        "Discord_Webhook": {
+            "description": "A way to protect your website with a simple key"
+        },
+        "Website_Api": {
+            "description": "A way to message discord with your webhook."
+        }
     }
 }
