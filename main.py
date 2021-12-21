@@ -1,9 +1,8 @@
-from boto.s3.connection import S3Connection
 from fastapi import FastAPI
 import os
 import requests
-Discord_Webhook = S3Connection(os.environ['Discord_Webhook'], os.environ['Auth_key'])
-Website_Api = S3Connection(os.environ['Website_Key'], os.environ['Auth_key'])
+Discord_Webhook = os.environ.get('Discord_Webhook')
+Website_Api = os.environ.get('Website_Key'')
 
 def SendMessageToDiscord(Msg):
     Message = {
