@@ -16,5 +16,6 @@ app = FastAPI()
 async def read_items(Key: str, Message: str):
     if Key == Website_Api:
       SendMessageToDiscord(Message)
+      return "Success"
     else:
         return "Incorrect key"
