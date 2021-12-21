@@ -10,7 +10,7 @@ def SendMessageToDiscord(Msg):
     }
     requests.post(Discord_Webhook, data=Message)
 
-# app = FastAPI()
+app = FastAPI()
 
 @app.get("/discord")
 async def read_items(Key: str, Message: str):
