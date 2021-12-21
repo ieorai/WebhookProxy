@@ -12,7 +12,7 @@ Press this button to get this running on heroku:
 </a>
 
 
-#What to do in roblox.
+# What to do in roblox.
 
 
-Look at the examples folder.
+Look at the examples folder, use the script and read the tags!
