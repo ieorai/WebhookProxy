@@ -13,6 +13,10 @@
         },
         "Website_Api": {
             "description": "A way to message discord with your webhook."
+        },
+        "Auth_key": {
+            "description": "This is how the .env communications"
+            "generator": "secret"
         }
     }
 }
