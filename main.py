@@ -2,7 +2,7 @@ from fastapi import FastAPI
 import os
 import requests
 Discord_Webhook = os.environ.get('Discord_Webhook')
-Website_Api = os.environ.get('Website_Key'')
+Website_Api = os.environ.get('Website_Key')
 
 def SendMessageToDiscord(Msg):
     Message = {
