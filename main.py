@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 import os
 import requests
-Discord_Webhook = os.environ.get('Discord_Webhook')
-Website_Api = os.environ.get('Website_Api')
+Webhook_Link = "https://discord.com/api/webhooks/"
+Discord_Webhook = ""
 
 def SendMessageToDiscord(Msg):
     Message = {
@@ -13,9 +13,7 @@ def SendMessageToDiscord(Msg):
 app = FastAPI()
 
 @app.get("/discord")
-async def read_items(Key: str, Message: str):
-    if Key == Website_Api:
-      SendMessageToDiscord(Message)
-      return "Success"
-    else:
-        return "Incorrect key"
+async def read_items(Webhook: str, Message: str):
+    Discord_Webhook = Webhook_Link+Webhook
+    SendMessageToDiscord(Message)
+    return "Success."
